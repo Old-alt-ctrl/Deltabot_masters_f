@@ -16,6 +16,22 @@ END_PROGRAM
 
 PROGRAM _CYCLIC
 	(* Insert code here *)
+	DAxis.Update := FALSE;
+	
+	IF select = '0' THEN // Test
+		DPara.ProgramName := 'Robotic.st';
+		DAxis.Update := TRUE;
+	ELSIF select = '1' THEN // Pick&Place
+		DPara.ProgramName := 'Robotic2.st';
+		DAxis.Update := TRUE;
+	ELSIF select = '2' THEN // Fast movement
+		DPara.ProgramName := 'MoveDemo.st';
+		DAxis.Update := TRUE;
+	ELSIF select = '3' THEN // Circle
+		DPara.ProgramName := 'Circ.st';
+		DAxis.Update := TRUE;
+	END_IF;
+	
 	CASE state OF
 		0: // zapnutí napájení motorù
 			IF DAxis.Active AND DAxis.Info.ReadyToPowerOn
