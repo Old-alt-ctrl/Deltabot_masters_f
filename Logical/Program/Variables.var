@@ -1,5 +1,8 @@
 VAR
 	state : USINT := 0;
+	run : BOOL := FALSE;
 	Program : ARRAY[0..3] OF STRING[100] := ['{"value":"0","text":"Test"}','{"value":"1","text":"Pick&Place"}','{"value":"2","text":"Fast movement"}','{"value":"3","text":"Circle"}'];
 	select : STRING[100];
+	err : BOOL := FALSE;
+	home : BOOL := FALSE;
 END_VAR

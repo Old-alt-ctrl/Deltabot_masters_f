@@ -9,5 +9,6 @@
     <Object Type="File">WVGA_LS1_contentNavigation.eventbinding</Object>
     <Object Type="File">WVGA_LS1_contentNavigation.binding</Object>
     <Object Type="File">WVGA_LS1_contentMain.binding</Object>
+    <Object Type="File">Config.mappviewcfg</Object>
   </Objects>
 </Package>
