@@ -10,6 +10,7 @@
     <mappCockpit Version="6.7.0" />
     <mappMotion McAcpDrv="6.7.2" McAcpSim="6.7.2" McAcpSys="6.7.2" McDriveLog="6.7.2" McMechSys="6.7.2" McProfGen="6.7.2" Version="6.7.2" />
     <mappView Version="6.7.0" />
+    <mappVision Version="6.8.1" />
     <OpcUaCs Version="6.7.0" />
   </TechnologyPackages>
 </Project>

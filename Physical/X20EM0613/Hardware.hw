@@ -5,6 +5,7 @@
     <Connection Connector="PLK1" TargetModule="X20EM0613" TargetConnector="IF3">
       <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
     </Connection>
+    <Parameter ID="VisionConfig" Value="gCamera" />
   </Module>
   <Module Name="X20BM11" Type="X20BM11" Version="1.1.0.0">
     <Connection Connector="X2X1" TargetModule="X20EM0613" TargetConnector="IF6" />
@@ -52,19 +53,34 @@
       <Parameter ID="ActivateSnmp" Value="2" />
     </Connector>
     <Parameter ID="ConfigurationID" Value="DeltaBot_X20CP0484" />
-    <Parameter ID="Simulation" Value="1" />
     <Parameter ID="TimerDeviceType" Value="EPLX2X" />
     <Parameter ID="TimerDevice" Value="X20EM0613.IF3" />
     <Parameter ID="TaskClassIdleTime" Value="4000" />
-    <Parameter ID="Cyclic1Duration" Value="4000" />
+    <Parameter ID="Cyclic1Duration" Value="2000" />
     <Parameter ID="Cyclic1Tolerance" Value="0" />
     <Parameter ID="Cyclic1Output" Value="1" />
     <Parameter ID="Cyclic3Duration" Value="48000" />
     <Parameter ID="Cyclic3Tolerance" Value="48000" />
     <Parameter ID="Cyclic8Duration" Value="8000" />
     <Group ID="FileDevice1" />
-    <Parameter ID="FileDeviceName1" Value="USER" />
-    <Parameter ID="FileDevicePath1" Value="USER_PATH" />
+    <Parameter ID="FileDeviceName1" Value="Uloz" />
+    <Parameter ID="FileDevicePath1" Value="F:\" />
+    <Group ID="FileDevice2" />
+    <Parameter ID="FileDeviceName2" Value="PcSim" />
+    <Parameter ID="FileDevicePath2" Value="C:\projects\GCode" />
+    <Parameter ID="TimeZone" Value="145" />
+    <Parameter ID="ActivateSntpServer" Value="1" />
+    <Parameter ID="Stratum" Value="3" />
+    <Parameter ID="ActivateFtpServer" Value="1" />
+    <Parameter ID="FTPProtocol" Value="1" />
+    <Group ID="FtpUser1" />
+    <Parameter ID="FtpUsername1" Value="Vit" />
+    <Parameter ID="FtpUserPassword1" Value="Q3dtPWE0lenons3uf1n7H/Zfzl/wcFKnmYATWpoFuHg=" />
+    <Parameter ID="FtpUserSalt1" Value="HaD6tsoL" />
+    <Parameter ID="FTPAccessRight1" Value="0" />
+    <Parameter ID="ActivateWebServer" Value="1" />
+    <Parameter ID="ActivateSdm" Value="1" />
+    <Parameter ID="Authentication" Value="0" />
   </Module>
   <Module Name="X20SM1444-1" Type="X20SM1444-1" Version="3.0.0.0">
     <Connection Connector="SS1" TargetModule="X20TB12_e" TargetConnector="SS" />
@@ -73,8 +89,20 @@
     <Parameter ID="LinesPerRevolution" Location="FunctionModel/DriveConfiguration/Encoder/Encoder/InterfaceType" Value="16384" />
     <Parameter ID="AxisReference" Location="FunctionModel/DriveConfiguration/Channel[1]/RealAxis" Value="gAxisQ1" />
     <Parameter ID="ReferenceDistance" Location="FunctionModel/DriveConfiguration/Channel[1]/RealAxis/MechanicalElements/RotaryToLinearTransformation" Value="94.405" />
+    <Parameter ID="RotationDirection" Location="FunctionModel/DriveConfiguration/Channel[1]/RealAxis/Motor" Value="Inverse" />
     <Parameter ID="EncoderLink" Location="FunctionModel/DriveConfiguration/Channel[1]/RealAxis" Value="OneEncoder" />
     <Parameter ID="PositionEncoder" Location="FunctionModel/DriveConfiguration/Channel[1]/RealAxis/EncoderLink" Value="Encoder" />
+    <Parameter ID="StandstillCurrent" Location="FunctionModel/DriveConfiguration/Channel[1]/RealAxis/Controller/Mode/Current" Value="0.5" />
+    <Parameter ID="ConstantSpeedCurrent" Location="FunctionModel/DriveConfiguration/Channel[1]/RealAxis/Controller/Mode/Current" Value="1" />
+    <Parameter ID="SpeedChangeCurrent" Location="FunctionModel/DriveConfiguration/Channel[1]/RealAxis/Controller/Mode/Current" Value="2.5" />
+    <Parameter ID="Mode" Location="FunctionModel/DriveConfiguration/Channel[1]/RealAxis/Homing" Value="BlockLagError" />
+    <Parameter ID="Position" Location="FunctionModel/DriveConfiguration/Channel[1]/RealAxis/Homing/Mode" Value="260" />
+    <Parameter ID="StartVelocity" Location="FunctionModel/DriveConfiguration/Channel[1]/RealAxis/Homing/Mode" Value="5" />
+    <Parameter ID="HomingVelocity" Location="FunctionModel/DriveConfiguration/Channel[1]/RealAxis/Homing/Mode" Value="50" />
+    <Parameter ID="Acceleration" Location="FunctionModel/DriveConfiguration/Channel[1]/RealAxis/Homing/Mode" Value="20" />
+    <Parameter ID="PositionErrorStopLimit" Location="FunctionModel/DriveConfiguration/Channel[1]/RealAxis/Homing/Mode" Value="10" />
+    <Parameter ID="BlockDetectionPositionError" Location="FunctionModel/DriveConfiguration/Channel[1]/RealAxis/Homing/Mode" Value="3" />
+    <Parameter ID="ClearPositionError" Location="FunctionModel/DriveConfiguration/Channel[1]/RealAxis/Homing" Value="Yes" />
   </Module>
   <Module Name="X20SM1444-1_a" Type="X20SM1444-1" Version="3.0.0.0">
     <Connection Connector="SS1" TargetModule="X20TB12_f" TargetConnector="SS" />
@@ -83,8 +111,21 @@
     <Parameter ID="LinesPerRevolution" Location="FunctionModel/DriveConfiguration/Encoder/Encoder/InterfaceType" Value="16384" />
     <Parameter ID="AxisReference" Location="FunctionModel/DriveConfiguration/Channel[1]/RealAxis" Value="gAxisQ2" />
     <Parameter ID="ReferenceDistance" Location="FunctionModel/DriveConfiguration/Channel[1]/RealAxis/MechanicalElements/RotaryToLinearTransformation" Value="94.405" />
+    <Parameter ID="RotationDirection" Location="FunctionModel/DriveConfiguration/Channel[1]/RealAxis/Motor" Value="Inverse" />
     <Parameter ID="EncoderLink" Location="FunctionModel/DriveConfiguration/Channel[1]/RealAxis" Value="OneEncoder" />
     <Parameter ID="PositionEncoder" Location="FunctionModel/DriveConfiguration/Channel[1]/RealAxis/EncoderLink" Value="Encoder" />
+    <Parameter ID="Current" Location="FunctionModel/DriveConfiguration/Channel[1]/RealAxis/Controller/Mode" Value="SmartCurrentControl" />
+    <Parameter ID="StandstillCurrent" Location="FunctionModel/DriveConfiguration/Channel[1]/RealAxis/Controller/Mode/Current" Value="0.5" />
+    <Parameter ID="ConstantSpeedCurrent" Location="FunctionModel/DriveConfiguration/Channel[1]/RealAxis/Controller/Mode/Current" Value="1" />
+    <Parameter ID="SpeedChangeCurrent" Location="FunctionModel/DriveConfiguration/Channel[1]/RealAxis/Controller/Mode/Current" Value="2.5" />
+    <Parameter ID="Mode" Location="FunctionModel/DriveConfiguration/Channel[1]/RealAxis/Homing" Value="BlockLagError" />
+    <Parameter ID="Position" Location="FunctionModel/DriveConfiguration/Channel[1]/RealAxis/Homing/Mode" Value="260" />
+    <Parameter ID="StartVelocity" Location="FunctionModel/DriveConfiguration/Channel[1]/RealAxis/Homing/Mode" Value="5" />
+    <Parameter ID="HomingVelocity" Location="FunctionModel/DriveConfiguration/Channel[1]/RealAxis/Homing/Mode" Value="50" />
+    <Parameter ID="Acceleration" Location="FunctionModel/DriveConfiguration/Channel[1]/RealAxis/Homing/Mode" Value="20" />
+    <Parameter ID="PositionErrorStopLimit" Location="FunctionModel/DriveConfiguration/Channel[1]/RealAxis/Homing/Mode" Value="10" />
+    <Parameter ID="BlockDetectionPositionError" Location="FunctionModel/DriveConfiguration/Channel[1]/RealAxis/Homing/Mode" Value="3" />
+    <Parameter ID="ClearPositionError" Location="FunctionModel/DriveConfiguration/Channel[1]/RealAxis/Homing" Value="Yes" />
   </Module>
   <Module Name="X20SM1444-1_b" Type="X20SM1444-1" Version="3.0.0.0">
     <Connection Connector="SS1" TargetModule="X20TB12_g" TargetConnector="SS" />
@@ -93,8 +134,20 @@
     <Parameter ID="LinesPerRevolution" Location="FunctionModel/DriveConfiguration/Encoder/Encoder/InterfaceType" Value="16384" />
     <Parameter ID="AxisReference" Location="FunctionModel/DriveConfiguration/Channel[1]/RealAxis" Value="gAxisQ3" />
     <Parameter ID="ReferenceDistance" Location="FunctionModel/DriveConfiguration/Channel[1]/RealAxis/MechanicalElements/RotaryToLinearTransformation" Value="94.405" />
+    <Parameter ID="RotationDirection" Location="FunctionModel/DriveConfiguration/Channel[1]/RealAxis/Motor" Value="Inverse" />
     <Parameter ID="EncoderLink" Location="FunctionModel/DriveConfiguration/Channel[1]/RealAxis" Value="OneEncoder" />
     <Parameter ID="PositionEncoder" Location="FunctionModel/DriveConfiguration/Channel[1]/RealAxis/EncoderLink" Value="Encoder" />
+    <Parameter ID="StandstillCurrent" Location="FunctionModel/DriveConfiguration/Channel[1]/RealAxis/Controller/Mode/Current" Value="0.5" />
+    <Parameter ID="ConstantSpeedCurrent" Location="FunctionModel/DriveConfiguration/Channel[1]/RealAxis/Controller/Mode/Current" Value="1" />
+    <Parameter ID="SpeedChangeCurrent" Location="FunctionModel/DriveConfiguration/Channel[1]/RealAxis/Controller/Mode/Current" Value="2.5" />
+    <Parameter ID="Mode" Location="FunctionModel/DriveConfiguration/Channel[1]/RealAxis/Homing" Value="BlockLagError" />
+    <Parameter ID="Position" Location="FunctionModel/DriveConfiguration/Channel[1]/RealAxis/Homing/Mode" Value="260" />
+    <Parameter ID="StartVelocity" Location="FunctionModel/DriveConfiguration/Channel[1]/RealAxis/Homing/Mode" Value="5" />
+    <Parameter ID="HomingVelocity" Location="FunctionModel/DriveConfiguration/Channel[1]/RealAxis/Homing/Mode" Value="50" />
+    <Parameter ID="Acceleration" Location="FunctionModel/DriveConfiguration/Channel[1]/RealAxis/Homing/Mode" Value="20" />
+    <Parameter ID="PositionErrorStopLimit" Location="FunctionModel/DriveConfiguration/Channel[1]/RealAxis/Homing/Mode" Value="10" />
+    <Parameter ID="BlockDetectionPositionError" Location="FunctionModel/DriveConfiguration/Channel[1]/RealAxis/Homing/Mode" Value="3" />
+    <Parameter ID="ClearPositionError" Location="FunctionModel/DriveConfiguration/Channel[1]/RealAxis/Homing" Value="Yes" />
   </Module>
   <Module Name="X20TB12_a" Type="X20TB12" Version="1.0.0.0" />
   <Module Name="X20TB12_b" Type="X20TB12" Version="1.0.0.0" />

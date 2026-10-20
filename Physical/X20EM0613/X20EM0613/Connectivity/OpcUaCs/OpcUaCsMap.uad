@@ -13,10 +13,18 @@
         <Variable Name="Info">
           <Variable Name="JointAxisPosition" RecursiveEnable="2" />
         </Variable>
+        <Variable Name="Error" />
       </Variable>
       <Variable Name="U" />
       <Variable Name="V" />
       <Variable Name="W" />
     </GlobalVariables>
+    <Task Name="Program">
+      <Variable Name="Program" />
+      <Variable Name="select" />
+      <Variable Name="run" />
+      <Variable Name="err" />
+      <Variable Name="home" />
+    </Task>
   </Module>
 </OpcUaSource>

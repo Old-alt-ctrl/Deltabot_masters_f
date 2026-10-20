@@ -1,7 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?AutomationStudio FileVersion="4.9"?>
 <Configuration>
-  <Element ID="Feature_Programs" Type="axesgroupfeature" />
+  <Element ID="Feature_Programs" Type="axesgroupfeature">
+    <Selector ID="Type">
+      <Selector ID="Location" Value="User">
+        <Group ID="UserLocation[1]">
+          <Property ID="FileDevice" Value="PcSim" />
+        </Group>
+        <Group ID="UserLocation[2]">
+          <Property ID="FileDevice" Value="Uloz" />
+        </Group>
+      </Selector>
+    </Selector>
+  </Element>
   <Element ID="Feature_Jogging" Type="axesgroupfeature">
     <Selector ID="Type" Value="Jogging" />
   </Element>

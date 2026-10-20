@@ -20,5 +20,15 @@
     <Object Type="Library" Language="Binary" Description="Core library for mapp components">MpBase</Object>
     <Object Type="Library" Language="binary" Description="The AsOpcUac library provides function blocks for communication with an OPC UA Server">AsOpcUac</Object>
     <Object Type="Library" Language="binary" Description="The AsOpcUas library provides function blocks for handling OPC UA Server functionality">AsOpcUas</Object>
+    <Object Type="Library" Language="binary" Description="mappVision module: ViBase">ViBase</Object>
+    <Object Type="Library" Language="binary" Description="The AsARCfg library supports reading and writing Automation Runtime configurations.">AsARCfg</Object>
+    <Object Type="Library" Language="binary" Description="The powerlnk library supports low level layer 2 access to POWERLINK networks.">powerlnk</Object>
+    <Object Type="Library" Language="binary" Description="The AsEPL library is used to access service data objects of Ethernet-Powerlink stations">AsEPL</Object>
+    <Object Type="Library" Language="binary" Description="The AsIO library makes it possible to determine the states and values of a data point and carry out forcing operations.">AsIO</Object>
+    <Object Type="Library" Language="binary" Description="This library contains FBKs for exchanging data (data stream) via stream sockets (TCP).">AsTCP</Object>
+    <Object Type="Library" Language="binary" Description="The AsTime Library supports DATE_AND_TIME and TIME data types.">astime</Object>
+    <Object Type="Library" Language="binary" Description="The SYS_LIB library contains functions for memory management and operating system manipulation as well as hardware-specific functions.">sys_lib</Object>
+    <Object Type="Library" Language="binary" Description="The DataObj library can be used to dynamically create, dynamically delete and copy data objects, etc. ">DataObj</Object>
+    <Object Type="Library" Language="binary" Description="This library contains FBs for handling SSL configurations.">ArSsl</Object>
   </Objects>
 </Package>
