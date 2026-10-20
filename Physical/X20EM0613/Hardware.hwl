@@ -2,7 +2,7 @@
 <?AutomationStudio FileVersion="4.9"?>
 <BR.AS.HardwareTopology>
   <TimeStamps>
-    <TimeStamp LogicalPath="X20EM0613.Hardware.hw" LastWriteTime="10/06/2026 13:58:35" />
+    <TimeStamp LogicalPath="X20EM0613.Hardware.hw" LastWriteTime="10/15/2026 18:17:31" />
   </TimeStamps>
   <Modules>
     <Module Name="X20EM0613" Type="X20EM0613" X="100" Y="100" />
@@ -27,7 +27,19 @@
     <Module Name="X20BM31_b" Type="X20BM31" X="262" Y="100" />
     <Module Name="X20SM1444-1_b" Type="X20SM1444-1" X="262" Y="100" />
     <Module Name="X20TB12_g" Type="X20TB12" X="275" Y="126" />
+    <Module Name="VSC122Q25.051P-000" Type="VSC122Q25.051P-000" X="288" Y="270" />
   </Modules>
-  <Links />
+  <Links>
+    <Link From="X20EM0613" To="VSC122Q25.051P-000" FromPort="IF3" ToPort="PLK1" IsRoutedByUser="False">
+      <Point X="136" Y="205" />
+      <Point X="136" Y="205" />
+      <Point X="136" Y="221" />
+      <Point X="136" Y="405" />
+      <Point X="306" Y="405" />
+      <Point X="306" Y="393" />
+      <Point X="306" Y="388" />
+      <Point X="306" Y="388" />
+    </Link>
+  </Links>
   <InfoElements />
 </BR.AS.HardwareTopology>

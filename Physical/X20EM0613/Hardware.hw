@@ -1,6 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?AutomationStudio WorkingVersion="6.7" FileVersion="4.9"?>
 <Hardware xmlns="http://br-automation.co.at/AS/Hardware">
+  <Module Name="VSC122Q25.051P-000" Type="VSC122Q25.051P-000" Version="1.11.0.922" NodeNumber="1">
+    <Connection Connector="PLK1" TargetModule="X20EM0613" TargetConnector="IF3">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
+    </Connection>
+  </Module>
   <Module Name="X20BM11" Type="X20BM11" Version="1.1.0.0">
     <Connection Connector="X2X1" TargetModule="X20EM0613" TargetConnector="IF6" />
   </Module>
