@@ -7,4 +7,10 @@
       <Property ID="Role[1]" Value="BR_Engineer" />
     </Group>
   </Element>
+  <Element ID="Oliver" Type="User">
+    <Property ID="Password" Value="$argon2id$v=19$m=512,t=70,p=1$NO/kenZPzt6L$bwKQwNdgbQWi4r90Z/7bJ0dnN0ZkYFibWdN9YcW9RKs" />
+    <Group ID="Roles">
+      <Property ID="Role[1]" Value="BR_Engineer" />
+    </Group>
+  </Element>
 </Configuration>

@@ -4,9 +4,7 @@
   <Element ID="VisionSettings" Type="vicfg">
     <Property ID="ActivateVisualization" Value="TRUE" />
     <Property ID="FileDeviceName" />
-    <Selector ID="Protocol">
-      <Property ID="SSLConfiguration" />
-    </Selector>
+    <Selector ID="Protocol" Value="Unsecure" />
     <Group ID="DeepLearning">
       <Group ID="CustomDlNetworks">
         <Property ID="DLFileDeviceName" />

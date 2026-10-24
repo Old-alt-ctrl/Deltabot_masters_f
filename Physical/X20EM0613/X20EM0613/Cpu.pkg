@@ -23,5 +23,6 @@
     <DefaultTargetMemory Tasks="UserROM" />
     <Transfer />
     <Vc FirmwareVersion="6.0.0" />
+    <OnlineConfiguration Name="DB_lab" DeviceType="TCPIP" DeviceParameters="/IF=tcpip" ConnectionParameters="/COMT=2500 /AM=* /SDT=5 /IP=br-automation /PT=11169" Description="" />
   </Configuration>
 </Cpu>
