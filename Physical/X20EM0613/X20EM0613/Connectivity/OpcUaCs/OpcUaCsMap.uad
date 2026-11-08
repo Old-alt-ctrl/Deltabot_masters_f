@@ -14,10 +14,17 @@
           <Variable Name="JointAxisPosition" RecursiveEnable="2" />
         </Variable>
         <Variable Name="Error" />
+        <Variable Name="MoveActive" />
+        <Variable Name="X" />
+        <Variable Name="Y" />
+        <Variable Name="Z" />
       </Variable>
       <Variable Name="U" />
       <Variable Name="V" />
       <Variable Name="W" />
+      <Variable Name="DPara">
+        <Variable Name="Position" />
+      </Variable>
     </GlobalVariables>
     <Task Name="Program">
       <Variable Name="Program" />

@@ -8,7 +8,7 @@
           <Group ID="Dimensions">
             <Group ID="BasePlatform">
               <Group ID="Center">
-                <Property ID="Z" Value="797.14" />
+                <Property ID="Z" Value="809.148" />
               </Group>
               <Group ID="Arm1LinkPoint">
                 <Property ID="Radius" Value="420.36" />

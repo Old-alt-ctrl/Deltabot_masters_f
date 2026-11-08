@@ -22,10 +22,6 @@
       <Target xsi:type="brease" contentRefId="WVGA_LS1_contentMain" widgetRefId="DropDownBox1" attribute="selectedValue" />
     </Binding>
     <Binding mode="twoWay">
-      <Source xsi:type="opcUa" refId="::Program:run" attribute="value" />
-      <Target xsi:type="brease" contentRefId="WVGA_LS1_contentMain" widgetRefId="RunSig" attribute="value" />
-    </Binding>
-    <Binding mode="twoWay">
       <Source xsi:type="opcUa" refId="::Program:home" attribute="value" />
       <Target xsi:type="brease" contentRefId="WVGA_LS1_contentMain" widgetRefId="ToggleButton3" attribute="value" />
     </Binding>
@@ -33,9 +29,29 @@
       <Source xsi:type="opcUa" refId="::AsGlobalPV:DAxis.Error" attribute="value" />
       <Target xsi:type="brease" contentRefId="WVGA_LS1_contentMain" widgetRefId="ErrorSig" attribute="value" />
     </Binding>
+    <Binding mode="twoWay">
+      <Source xsi:type="opcUa" refId="::Program:err" attribute="value" />
+      <Target xsi:type="brease" contentRefId="WVGA_LS1_contentMain" widgetRefId="Reset" attribute="value" />
+    </Binding>
+    <Binding mode="twoWay">
+      <Source xsi:type="opcUa" refId="::AsGlobalPV:DAxis.MoveActive" attribute="value" />
+      <Target xsi:type="brease" contentRefId="WVGA_LS1_contentMain" widgetRefId="RunSig" attribute="value" />
+    </Binding>
+    <Binding mode="twoWay">
+      <Source xsi:type="opcUa" refId="::Program:run" attribute="value" />
+      <Target xsi:type="brease" contentRefId="WVGA_LS1_contentMain" widgetRefId="Start" attribute="value" />
+    </Binding>
   <Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::Program:err" attribute="value" />
-<Target xsi:type="brease" contentRefId="WVGA_LS1_contentMain" widgetRefId="ToggleButton5" attribute="value" />
+<Source xsi:type="opcUa" refId="::AsGlobalPV:DAxis.X" attribute="node" />
+<Target xsi:type="brease" contentRefId="WVGA_LS1_contentMain" widgetRefId="NumericOutput6" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:DAxis.Y" attribute="value" />
+<Target xsi:type="brease" contentRefId="WVGA_LS1_contentMain" widgetRefId="NumericOutput4" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:DAxis.Z" attribute="value" />
+<Target xsi:type="brease" contentRefId="WVGA_LS1_contentMain" widgetRefId="NumericOutput5" attribute="value" />
 </Binding>
 </Bindings>
 </BindingsSet>

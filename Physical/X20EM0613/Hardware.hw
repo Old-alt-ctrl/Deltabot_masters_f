@@ -74,7 +74,7 @@
     <Parameter ID="FileDevicePath1" Value="F:\" />
     <Group ID="FileDevice2" />
     <Parameter ID="FileDeviceName2" Value="PcSim" />
-    <Parameter ID="FileDevicePath2" Value="C:\projects\GCode" />
+    <Parameter ID="FileDevicePath2" Value="USER_PATH\" />
     <Parameter ID="TimeZone" Value="145" />
     <Parameter ID="ActivateSntpServer" Value="1" />
     <Parameter ID="Stratum" Value="3" />

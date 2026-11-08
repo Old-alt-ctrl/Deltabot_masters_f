@@ -7,9 +7,6 @@
         <Group ID="UserLocation[1]">
           <Property ID="FileDevice" Value="PcSim" />
         </Group>
-        <Group ID="UserLocation[2]">
-          <Property ID="FileDevice" Value="Uloz" />
-        </Group>
       </Selector>
     </Selector>
   </Element>
