@@ -3,8 +3,9 @@
 <Configuration>
   <Element ID="MappViewConfiguration" Type="MAPPVIEWCFG">
     <Group ID="Server">
-      <Selector ID="WebServerProtocol" Value="1">
-        <Property ID="WebServerPort" Value="81" />
+      <Selector ID="WebServerProtocol" Value="2">
+        <Property ID="WebServerPortSsl" Value="84" />
+        <Property ID="SSLConfiguration" Value="SSLConfiguration" />
       </Selector>
       <Property ID="MaxClientConnections" Value="1" />
       <Property ID="MpUserXUserPreferences" Value="FALSE" />
@@ -33,7 +34,7 @@
         <Property ID="cachingSlots" Value="200" />
         <Property ID="preserveOldValues" Value="TRUE" />
       </Group>
-      <Property ID="defaultVisu" Value="" />
+      <Property ID="defaultVisu" Value="HMI" />
       <Group ID="Widget">
         <Selector ID="renderingPolicy" Value="1" />
         <Selector ID="securityPolicy" Value="1" />

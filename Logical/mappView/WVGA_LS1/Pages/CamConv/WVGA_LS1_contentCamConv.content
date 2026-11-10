@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="WVGA_LS1_contentCamConv" guid="b45c1a45-0b76-487c-932b-7099331b0f0e" height="420" width="690" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox2" top="10" left="20" width="655" height="395" zIndex="0" text="CONVEYOR">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.ToggleButton" id="OnOff" top="32" left="49" width="90" height="90" zIndex="0" image="Media/Img_WVGA_LS1/Symbols/On.svg" checkedBackColor="rgba(255, 128, 0, 1)" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="StartConv" top="33" left="159" width="90" height="90" zIndex="1" image="Media/Img_WVGA_LS1/Symbols/Start.svg" checkedBackColor="rgba(255, 128, 0, 1)" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="SpeedPlus" top="153" left="49" width="90" height="90" zIndex="2" image="Media/Img_WVGA_LS1/Arrow/ArrowUp.svg" checkedBackColor="rgba(255, 128, 0, 1)" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="SpeedMinus" top="153" left="159" width="90" height="90" zIndex="3" image="Media/Img_WVGA_LS1/Arrow/ArrowDown.svg" checkedBackColor="rgba(255, 128, 0, 1)" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="RunSigConv" top="253" left="39" width="80" height="80" zIndex="4" text="Run" disabledBackColor="rgba(105, 105, 105, 1)" checkedBackColor="rgba(0, 255, 0, 1)" checkedTextColor="rgba(0, 0, 0, 1)" checkedImageColor="rgba(0, 255, 0, 1)" checkedBorderColor="rgba(0, 255, 0, 1)" disabledCheckedBackColor="rgba(0, 255, 0, 1)" enable="false" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ErrorSigConv" top="252" left="179" width="80" height="80" zIndex="5" image="Media/Img_WVGA_LS1/Alarm/Alarm.svg" disabledBackColor="rgba(105, 105, 105, 1)" checkedBackColor="rgba(255, 0, 0, 1)" checkedTextColor="rgba(0, 0, 0, 1)" checkedImageColor="rgba(255, 255, 255, 1)" checkedBorderColor="rgba(255, 0, 0, 1)" disabledCheckedBackColor="rgba(255, 0, 0, 1)" enable="false" />
+      </Widgets>
+    </Widget>
+  </Widgets>
+</Content>

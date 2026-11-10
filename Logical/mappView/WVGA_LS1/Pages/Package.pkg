@@ -4,5 +4,6 @@
   <Objects>
     <Object Type="Package" Description="AreaContents">AreaContents</Object>
     <Object Type="Package" TransferedForTargetSourceCompare="true">Main</Object>
+    <Object Type="Package" TransferedForTargetSourceCompare="true">CamConv</Object>
   </Objects>
 </Package>

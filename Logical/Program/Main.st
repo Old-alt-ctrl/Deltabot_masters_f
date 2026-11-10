@@ -19,7 +19,10 @@ PROGRAM _CYCLIC
 	DAxis.Update := FALSE;
 	DAxis.ErrorReset := FALSE;
 		
-	IF select = '0' THEN // Test
+	IF home THEN
+		DPara.ProgramName := 'Home.st';
+		DAxis.Update := TRUE;
+	ELSIF select = '0' THEN // Test
 		DPara.ProgramName := 'Robotic.st';
 		DAxis.Update := TRUE;
 	ELSIF select = '1' THEN // Pick&Place
@@ -50,10 +53,27 @@ PROGRAM _CYCLIC
 				state := 2;
 			END_IF ;
 			
+		2: // cekani na povel k pohybu
+			IF run THEN
+				DAxis.MoveProgram := TRUE;
+				state := 3;
+			END_IF;
+			
+		3: // aktivni pohyb
+			IF NOT run THEN
+				DAxis.MoveProgram := FALSE;
+				state := 2;
+			ELSIF DAxis.MoveDone THEN
+				DAxis.MoveProgram := FALSE;
+				run := FALSE;
+				state := 2;
+			END_IF;
+			
 		40: // errorovy stav
 			DAxis.MoveDirect := FALSE;
 			DAxis.MoveLinear := FALSE;
 			DAxis.MoveProgram := FALSE;
+			run := FALSE;
 			DAxis.Power := FALSE;
 			IF err THEN
 				DAxis.ErrorReset := TRUE;
@@ -71,6 +91,8 @@ PROGRAM _CYCLIC
 	
 	IF DAxis.Error THEN
 		state := 40;
+	ELSE
+		err := FALSE;
 	END_IF;
 	
 	DAxis();

@@ -3,7 +3,7 @@
   <Bindings>
 <Binding mode="twoWay">
 <Source xsi:type="session" refId="WVGA_LS1_Theme" attribute="value" />
-<Target xsi:type="brease" contentRefId="WVGA_LS1_contentNavigation" widgetRefId="ToggleSwitch1" attribute="value" />
+<Target xsi:type="brease" contentRefId="WVGA_LS1_contentNavigation" widgetRefId="ToggleSwitch1" attribute="value" />	
 </Binding>
 </Bindings>
 </BindingsSet>

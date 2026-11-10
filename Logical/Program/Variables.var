@@ -5,4 +5,8 @@ VAR
 	select : STRING[100];
 	err : BOOL := FALSE;
 	home : BOOL := FALSE;
+	conOn : BOOL := FALSE;
+	conSt : BOOL := FALSE;
+	conSpp : BOOL := FALSE;
+	conSpm : BOOL := FALSE;
 END_VAR
