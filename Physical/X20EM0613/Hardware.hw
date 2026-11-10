@@ -60,6 +60,7 @@
       <Parameter ID="SubnetMask" Value="255.255.255.0" />
     </Connector>
     <Parameter ID="ConfigurationID" Value="DeltaBot_X20CP0484" />
+    <Parameter ID="Simulation" Value="1" />
     <Parameter ID="TimerDeviceType" Value="EPLX2X" />
     <Parameter ID="TimerDevice" Value="X20EM0613.IF3" />
     <Parameter ID="TaskClassIdleTime" Value="4000" />

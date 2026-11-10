@@ -3,10 +3,11 @@
 <Configuration>
   <Element ID="MappViewConfiguration" Type="MAPPVIEWCFG">
     <Group ID="Server">
-      <Selector ID="WebServerProtocol" Value="1">
-        <Property ID="WebServerPort" Value="81" />
+      <Selector ID="WebServerProtocol" Value="2">
+        <Property ID="WebServerPortSsl" Value="84" />
+        <Property ID="SSLConfiguration" Value="SSLConfiguration" />
       </Selector>
-      <Property ID="MaxClientConnections" Value="1" />
+      <Property ID="MaxClientConnections" Value="2" />
       <Property ID="MpUserXUserPreferences" Value="FALSE" />
       <Selector ID="StartupUser" Value="StartupUserForcedLogin" />
       <Group ID="TcpProxyConf">
