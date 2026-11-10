@@ -32,6 +32,8 @@
       <Variable Name="run" />
       <Variable Name="err" />
       <Variable Name="home" />
+    </Task>
+    <Task Name="Dopravnik">
       <Variable Name="conOn" />
       <Variable Name="conSpm" />
       <Variable Name="conSpp" />
