@@ -1,4 +1,11 @@
+# -- B&R -- 
 Binaries/
 Diagnosis/
 Temp/
 *.set
+
+# -- PlatformIO / VS Code --
+MCU/.pio/
+MCU/.vscode/.browse.c_cpp.db*
+MCU/.vscode/launch.json
+.vscode/
