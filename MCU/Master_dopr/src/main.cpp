@@ -21,7 +21,7 @@ CmdPin cmdPins[] = {
 const size_t PIN_COUNT = sizeof(cmdPins)/sizeof(cmdPins[0]);
 const unsigned long signalDelay = 120; //ms
 unsigned long lastSendTime = 0;
-void feedbackRecived(uint8_t *macAdr, uint8_t msgStatus)
+void OnDataSent(uint8_t *macAdr, uint8_t msgStatus)
 {
   if (msgStatus == 0) {
     Serial.println("Received (ACK)");
@@ -29,11 +29,6 @@ void feedbackRecived(uint8_t *macAdr, uint8_t msgStatus)
     Serial.println("Msg send failed");
   }
 }
-
-int lastStart = HIGH;
-int lastSpeedUp = HIGH;
-int lastSpeedDown = HIGH;
-int lastOnOff = HIGH;
 
 void setup() {
   Serial.begin(115200);
@@ -51,7 +46,7 @@ void setup() {
   }
 
   esp_now_set_self_role(ESP_NOW_ROLE_CONTROLLER);
-  esp_now_register_send_cb(feedbackRecived);
+  esp_now_register_send_cb(OnDataSent);
   esp_now_add_peer(slaveAddress, ESP_NOW_ROLE_SLAVE, 1, NULL, 0);
 }
 
