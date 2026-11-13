@@ -1,7 +1,8 @@
 
 PROGRAM _INIT
 	(* Insert code here *)
-	 
+	state := 0;
+	tmp_actCmd := 0;
 END_PROGRAM
 
 PROGRAM _CYCLIC
@@ -11,6 +12,7 @@ PROGRAM _CYCLIC
 	trig_Start(CLK := conSt);
 	trig_Plus(CLK := conSpp);
 	trig_Minus(CLK := conSpm);
+	
 	IF tmp_actCmd = 0 THEN
 		IF trig_On.Q THEN
 			tmp_actCmd := 1; // prikaz 1 je ON
@@ -31,7 +33,7 @@ PROGRAM _CYCLIC
 			do_SpP := FALSE;
 			do_SpM := FALSE;
 			
-			IF tmp_actCmd = 0 THEN
+			IF tmp_actCmd <> 0 THEN
 				IF trig_On.Q THEN
 					tmp_actCmd := 1; // prikaz 1 je ON
 					state := 1;
@@ -48,6 +50,10 @@ PROGRAM _CYCLIC
 			END_IF
 		1:	//Pulse - generovani pulsu
 			butEn := FALSE;
+			conOn := FALSE;
+			conSt := FALSE;
+			conSpp := FALSE;
+			conSpm := FALSE;
 			do_OnOff := (tmp_actCmd = 1);
 			do_Start := (tmp_actCmd = 2);
 			do_SpP := (tmp_actCmd = 3);

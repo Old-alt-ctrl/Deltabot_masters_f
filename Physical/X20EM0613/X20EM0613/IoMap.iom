@@ -1,4 +1,6 @@
-
 VAR_CONFIG
-
+	::Dopravnik:do_OnOff AT %QX."X20DO6322_a".DigitalOutput01;
+	::Dopravnik:do_Start AT %QX."X20DO6322_a".DigitalOutput02;
+	::Dopravnik:do_SpP AT %QX."X20DO6322_a".DigitalOutput03;
+	::Dopravnik:do_SpM AT %QX."X20DO6322_a".DigitalOutput04;
 END_VAR

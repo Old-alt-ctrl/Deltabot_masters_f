@@ -13,9 +13,9 @@ struct CmdPin {
 
 CmdPin cmdPins[] = {
   {1, D1, HIGH}, //Start
-  {2, D2, HIGH}, //Speed Up
+  {2, D6, HIGH}, //Speed Up
   {3, D5, HIGH}, //Speed Down
-  {4, D6, HIGH}  //On/Off
+  {4, D2, HIGH}  //On/Off
 };
 
 const size_t PIN_COUNT = sizeof(cmdPins)/sizeof(cmdPins[0]);
